@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo nhận diện giọng nói</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Demo nhận diện giọng nói</h1>
+        <h3 class="no-browser-support">Trình duyệt của bạn không hỗ trợ nhận diện giọng nói. Vui lòng thử lại bằng Google
+            Chrome.
+        </h3>
+
+        <div class="app">
+            <div class="input-single">
+                <textarea id="note-textarea" placeholder="Tạo ghi chú mới bằng cách gõ hoặc sử dụng nhận diện giọng nói." rows="6"></textarea>
+            </div>
+            <button id="start-record-btn" title="Start Recording">Bắt đầu ghi âm</button>
+            <button id="pause-record-btn" title="Pause Recording">Dừng ghi âm</button>
+            <button id="save-note-btn" title="Save Note">Lưu văn bản</button>
+            <p id="recording-instructions">Ấn nút <strong>Bắt đầu ghi âm</strong> và chọn OK nếu hộp thoại yêu cầu cho phép
+                truy cập microphone hiện ra.</p>
+
+            <h3>Ghi chú của tôi</h3>
+            <ul id="notes">
+                <li>
+                    <p class="no-notes">Bạn chưa có ghi chú nào.</p>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
