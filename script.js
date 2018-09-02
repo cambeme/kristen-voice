@@ -62,7 +62,7 @@ recognition.onstart = function() {
 }
 
 recognition.onspeechend = function() {
-  instructions.text('Bạn đã im lặng một lúc lâu, nhận diện giọng nói đã tự động tắt.');
+  instructions.text('Nhận diện giọng nói đã ngưng.');
 }
 
 recognition.onerror = function(event) {
